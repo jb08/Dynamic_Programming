@@ -1,5 +1,8 @@
 import numpy as np
 
+
+#given inputs m (array of free minutes by day) and t (array of minutes to read each section), 
+#computes minimum unhappiness based on the formula in the given problem
 def min_unhappiness(m,t):
     
     D = len(m)
@@ -61,8 +64,7 @@ def run_test(m,t, expected_val):
     print memo
     print 
 
-if __name__ == "__main__":
-
+def test_set():
     m = [5,4,6]
     t = [3,1,5,4]
     expected_val = 18
@@ -104,3 +106,7 @@ if __name__ == "__main__":
     expected_val = 625+16
 
     run_test(m,t, expected_val)
+
+if __name__ == "__main__":
+
+    test_set()
